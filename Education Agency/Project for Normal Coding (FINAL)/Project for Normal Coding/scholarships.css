@@ -1,0 +1,570 @@
+/* =========================
+   FIRST CSS FILE (UNCHANGED)
+   ========================= */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--bg-main);
+  color: #e5e7eb;
+}
+
+.hero {
+  min-height: 100vh;
+  width: 100%;
+  background:
+    linear-gradient(rgba(2,6,23,0.6), rgba(2,6,23,0.6)),
+    url("./images/Scholarship/firstBackgroundImage.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  font-size: 18px;
+  color: #cbd5f5;
+}
+
+.types {
+  padding: 80px 60px;
+  text-align: center;
+}
+
+.type-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.type-card {
+  position: relative;
+  background: #0f172a;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.type-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.type-card h3 {
+  padding: 20px;
+  font-size: 20px;
+}
+
+.type-card p {
+  padding: 0 20px 30px;
+  color: #cbd5f5;
+}
+
+.featured {
+  padding: 80px 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.featured .featured-text h2{
+  line-height: 90px;
+  font-weight: 800;
+}
+.featured .featured-text p{
+  line-height: 30px;
+  font-size: 1.1rem;
+}
+
+.featured img {
+  width: 100%;
+  border-radius: 16px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background: linear-gradient(90deg,#22d3ee,#a855f7);
+  color: #020617;
+  border-radius: 30px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.step {
+  width: 400px;
+  background: #0f172a;
+  padding: 30px;
+  border-radius: 18px;
+  transition: transform 0.3s;
+  line-height: 25px;
+}
+.steps h2{
+  padding-left: 30px;
+}
+
+
+.step-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+
+
+.step img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.testimonials {
+  padding: 40px 60px;
+  text-align: center;
+}
+
+.testmonials h2{
+  text-shadow: 0px 0px 4px white;
+}
+
+.testimonial-card {
+  position: relative;
+}
+
+.testimonial-card::before {
+  content: "“";
+  font-size: 80px;
+  color: #38bdf8;
+  position: absolute;
+  top: -20px;
+  left: 20px;
+}
+
+.testimonial-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.cta {
+  padding: 60px 20px;
+  text-align: center;
+  background: linear-gradient(90deg,#020617,#1e1b4b);
+  margin-bottom: 20px;
+}
+.cta h2{
+  margin-bottom: 20px;
+}
+footer {
+  padding: 30px;
+  text-align: center;
+  background: #020617;
+}
+
+/* =========================
+   SECOND CSS FILE (UNCHANGED)
+   ========================= */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --text-color: #cbd5f5; 
+    --heading-color: rgb(94, 94, 231);
+    --shadow-color: 2px 2px 25px rgb(87, 87, 175);
+    --border-color: #19154b; 
+}
+
+body{
+    background: linear-gradient(120deg, #020617, #020024); 
+}
+
+/* Navbar */
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background-color: var(--bg-section);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border-soft);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.logo .icon {
+  font-size: 26px;
+}
+
+.logo span {
+  color: var(--accent-primary);
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: var(--text-secondary);
+  font-weight: 500;
+  font-size: 15px;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: var(--text-primary);
+}
+
+nav a:active {
+  color: var(--accent-primary);
+}
+
+.get-started {
+  background: var(--btn-gradient);
+  color: black;
+  font-weight: 500;
+  border-radius: var(--radius-lg);
+  padding: 0.6rem 1.2rem;
+  box-shadow: var(--shadow-accent);
+  transition: all 200ms;
+}
+
+.get-started:hover {
+  opacity: 0.85;
+  color: white;
+}
+
+/* Scholarships */
+#scholarships{
+    width: 100%;
+    height: 950px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    gap: 40px;
+} 
+
+#scholarships .about-scholarships{
+    width: 70%;
+    height: 200px;
+    border: 1px solid #00E5FF;
+    border-radius: 10px;
+    padding-left: 10px;  
+} 
+
+#scholarships .about-scholarships h3{
+    color: #00E5FF;
+    text-shadow: 0px 0px 7px #00E5FF;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#scholarships .about-scholarships p{
+    color: var(--text-color);   
+    letter-spacing: 0.3px;
+    padding-left: 3px;
+    line-height: 27px
+}
+
+#scholarships .scholarships-universities{
+    width: 70%;
+    height: 350px;
+    border: 1px solid #00E5FF;
+    border-radius: 10px;
+    padding-left: 10px;     
+}
+
+#scholarships .scholarships-universities .need{
+    color: #00E5FF;
+    text-shadow: 0px 0px 7px #00E5FF;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#scholarships .scholarships-universities .unis h3{
+    color: white;
+    text-shadow: 0px 0px 3px white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#scholarships .scholarships-universities p{
+    color: var(--text-color);
+    letter-spacing: 0.3px;
+}
+
+#scholarships .scholarships-universities .unis{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#scholarships .scholarships-universities .unis p{
+    margin-top: 10px;
+    line-height: 1.7rem;
+}
+#scholarships .scholarships-universities .unis div{
+    width: 300px;
+    height: 200px;
+    border-radius: 8px;
+    border-left: 3px solid #00E5FF; 
+    padding-left: 10px; 
+    transition: all 0.3s;
+}
+
+#scholarships .scholarships-work{
+    width: 70%;
+    height: 350px;
+    border: 1px solid #00E5FF;
+    border-radius: 10px;
+    padding-left: 10px; 
+}
+
+#scholarships .scholarships-work .work-title{
+    color: #00E5FF;
+    text-shadow: var(--shadow-color);
+    padding-top: 28px;
+    padding-bottom: 10px;
+}
+
+#scholarships .scholarships-work .works{
+  width: 99%;
+  height: 250px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-right: 10px;
+}
+
+#scholarships .scholarships-work .works div{
+  width: 300px;
+  height: 200px;
+  background-color: var(--bg-main);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#scholarships .scholarships-work .works div span{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  line-height: 50px;
+  text-align: center;
+  color: var(--text-color);
+  background-color: var(--heading-color);
+}
+
+#scholarships .scholarships-work .works div h3{
+  color: #00E5FF;
+  text-shadow: var(--shadow-color);
+}
+
+#scholarships .scholarships-work .works div p{
+  color: var(--text-color);
+  text-align: center;
+}
+
+footer {
+  background: var(--bg-card);
+  color: var(--text-secondary);
+  padding: 70px 20px 40px;
+  border-top: 1px solid var(--border-soft);
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Footer layout */
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+/* ===============================
+   Company info
+================================ */
+
+.footer-company {
+  max-width: 260px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 22px;
+  margin-bottom: 14px;
+  color: var(--text-primary);
+}
+
+.footer-logo span {
+  color: var(--accent-primary);
+}
+
+.footer-tagline {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+/* ===============================
+   Footer columns
+================================ */
+
+.footer-links h4 {
+  margin-bottom: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+/* Footer links */
+.footer-links a {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: var(--accent-primary);
+}
+
+/* ===============================
+   Contact info
+================================ */
+
+.footer-contact p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: 10px;
+}
+
+/* ===============================
+   Copyright
+================================ */
+
+.footer-copy {
+  text-align: center;
+  font-size: 13px;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border-soft);
+  padding-top: 20px;
+}
+@media (max-width: 768px) {
+    header {
+        padding: 15px 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    nav a {
+        margin: 0 8px;
+        font-size: 14px;
+    }
+    
+    .get-started {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+/* Scholarships */
+#scholarships{
+    height: 1500px;
+} 
+
+#scholarships .about-scholarships{
+    width: 400px;
+    height: 350px;
+} 
+
+#scholarships .about-scholarships p,
+#scholarships .scholarships-universities p,
+#scholarships .scholarships-work .works div p{
+    font-size: 16.5px;
+}
+
+#scholarships .scholarships-universities{
+  width: 400px;
+  height: 500px;
+}
+
+#scholarships .scholarships-universities .unis{
+    width: 100%;
+    height: 340px;
+}
+ 
+#scholarships .scholarships-universities .unis div{
+    width: 330px;
+    height: 330px;
+    border-left: 4px solid #00E5FF; 
+}
+
+#scholarships .scholarships-work{
+    width: 400px;
+    height: 700px;
+}
+#scholarships .scholarships-work .work-title{
+  margin-bottom: 20px;
+}
+
+#scholarships .scholarships-work .works{
+  width: 400px;
+  height: 450px;
+  flex-direction: column;
+}
+
+#scholarships .scholarships-work .works div{
+  width: 300px;
+  height: 300px;
+  margin-bottom: 20px;
+}
+}

@@ -1,0 +1,32 @@
+:root {
+  /* ===== Backgrounds ===== */
+  --bg-main: #0b1020;        /* page background */
+  --bg-section: #0f172a;     /* sections */
+  --bg-card: #111827;        /* cards, nav, footer */
+
+  /* ===== Text ===== */
+  --text-primary: #e5e7eb;   /* main text */
+  --text-secondary: #9ca3af; /* paragraphs, muted */
+  --text-muted: #6b7280;     /* footnotes */
+
+  /* ===== Brand Accents ===== */
+  --accent-primary: #22d3ee;   /* cyan (MAIN accent) */
+  --accent-secondary: #6366f1; /* soft indigo (rare use) */
+
+  /* ===== Buttons ===== */
+  --btn-gradient: linear-gradient(
+    135deg,
+    #22d3ee,
+    #6366f1
+  );
+
+  /* ===== Borders & Effects ===== */
+  --border-soft: rgba(255, 255, 255, 0.08);
+  --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.35);
+  --shadow-accent: 0 10px 30px rgba(34, 211, 238, 0.25);
+
+  /* ===== Radius ===== */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+}

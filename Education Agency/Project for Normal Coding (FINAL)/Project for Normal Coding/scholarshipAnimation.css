@@ -1,0 +1,58 @@
+.types h2{
+    color: #00E5FF;
+    text-shadow: 0px 0px 7px #00E5FF;
+    font-weight: 1000;
+    font-size: 1.7rem;
+}
+
+.type-grid h3{
+    text-shadow: 0px 0px 2px white;
+}
+
+.type-card{
+    transition: all .3s ease;
+}
+
+.type-card:hover {
+    box-shadow: 0 0 10px 10px rgba(0, 229, 255, 0.46);
+    transform: translateY(-15px) scale(1.02);
+    border: 1.5px solid #00E5FF;
+}
+.featured .featured-text h2{
+    text-shadow: 0px 0px 3px white;
+}
+.featured .featured-text .btn{
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: var(--shadow-accent)
+}
+.featured .featured-text .btn:hover{
+    transform: translateY(-2px);
+    box-shadow: 0px 13px 35px rgba(34, 211, 238, 0.35);
+}
+
+.steps h2{
+    color: #00E5FF;
+    text-shadow: 0px 0px 4px #00E5FF;
+}
+.step{
+    transition: all 0.3s ease;
+}
+.step:hover {
+    box-shadow: 0 0 10px 10px rgba(0, 229, 255, 0.46);
+    transform: translateY(-15px) scale(1.02);
+    border: 1.5px solid #00E5FF;
+}
+
+#scholarships .scholarships-universities .unis div:hover{
+  transform: translateY(0px);
+}
+
+.cta a{
+    transition: all 0.2s ease;
+
+}
+
+.cta a:hover{
+    transform: translateY(-2px);
+    box-shadow: 0px 13px 35px rgba(34, 211, 238, 0.35);
+}

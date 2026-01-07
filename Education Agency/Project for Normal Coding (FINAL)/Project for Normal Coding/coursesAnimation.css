@@ -1,0 +1,33 @@
+/* Text glow animation */
+@keyframes shadow {
+    0% {
+        text-shadow: 0 0 0px #00E5FF, 0 0 0px #00E5FF, 0 0 0px #00E5FF;
+    }
+    100% {
+        text-shadow: 0 0 10px #00E5FF, 0 0 20px #00E5FF, 0 0 30px #00E5FF;
+    }
+}
+
+.course-title {
+    margin-bottom: 23px;
+    color: #00E5FF;
+    animation: shadow 2.5s infinite alternate ease-in-out;
+}
+
+/* General course box hover effect */
+.web-courses .course-box,
+.ai-courses .course-box,
+.data-courses .course-box,
+.cyber-courses .course-box {
+    transition: all 0.3s ease;
+}
+
+/* Hover glow for all course boxes */
+.web-courses .course-box:hover,
+.ai-courses .course-box:hover,
+.data-courses .course-box:hover,
+.cyber-courses .course-box:hover {
+    box-shadow: 0 0 10px 10px rgba(0, 229, 255, 0.46);
+    transform: translateY(-15px) scale(1.02);
+    border: 1.5px solid #00E5FF;
+}

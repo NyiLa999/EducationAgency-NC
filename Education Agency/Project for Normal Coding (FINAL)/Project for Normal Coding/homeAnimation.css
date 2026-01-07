@@ -1,0 +1,35 @@
+.hero .second {
+  color: var(--accent-primary);
+  text-shadow: 0 0 8px rgba(34, 211, 238, 0.35);
+}
+
+.hero {
+  animation: heroEnter 0.8s ease-out forwards;
+}
+
+
+@keyframes heroEnter {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.hero p {
+  opacity: 0.85;
+}
+
+
+.buttons a {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.buttons a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 35px rgba(34, 211, 238, 0.35);
+}

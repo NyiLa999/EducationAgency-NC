@@ -1,0 +1,434 @@
+/* Root Variables - Add to root.css or create if not exists */
+:root {
+    --bg-main: #f8fafc;
+    --bg-section: rgba(255, 255, 255, 0.95);
+    --border-soft: rgba(203, 213, 245, 0.3);
+    --accent-primary: #4f46e5;
+    --text-primary: #1e293b;
+    --text-secondary: #64748b;
+    --btn-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --radius-lg: 12px;
+    --shadow-accent: 0 10px 20px rgba(79, 70, 229, 0.15);
+    
+    /* New variables for contact page */
+    --form-bg: rgba(255, 255, 255, 0.95);
+    --form-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+    --input-border: #e2e8f0;
+    --input-focus: #c7d2fe;
+    --success-color: #10b981;
+    --card-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: var(--bg-main);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+/* Navbar */
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background-color: var(--bg-section);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border-soft);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.logo .icon {
+  font-size: 26px;
+}
+
+.logo span {
+  color: var(--accent-primary);
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: var(--text-secondary);
+  font-weight: 500;
+  font-size: 15px;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: var(--text-primary);
+}
+
+nav a:active {
+  color: var(--accent-primary);
+}
+
+.get-started {
+  background: var(--btn-gradient);
+  color: black;
+  font-weight: 500;
+  border-radius: var(--radius-lg);
+  padding: 0.6rem 1.2rem;
+  box-shadow: var(--shadow-accent);
+  transition: all 200ms;
+}
+
+.get-started:hover {
+  opacity: 0.85;
+  color: white;
+}
+
+
+/* Main Content */
+main {
+    flex: 1;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-bottom: 60px;
+}
+
+/* Contact Form Section */
+#application-form {
+    width: 100%;
+    max-width: 800px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+#application-form h3 {
+    color:#00E5FF;
+    font-size: 28px;
+    text-align: center;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 10px;
+    position: relative;
+    padding-bottom: 20px;
+    text-shadow: 0px 0px 20px #00E5FF;
+}
+
+#application-form h3::after {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 4px;
+    background: var(--btn-gradient);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+#application-form p{
+    color: white;
+}
+
+#application-form .app-form {
+    width: 100%;
+    background: var(--form-bg);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: var(--form-shadow);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    position: relative;
+    overflow: hidden;
+}
+
+#application-form .app-form::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: var(--btn-gradient);
+}
+
+/* Form Input Styles */
+.app-form .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.app-form label {
+    font-size: 16px;
+    color: #007f8d;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 650;
+}
+
+.app-form label::before {
+    content: '→';
+    color: var(--accent-primary);
+    font-weight: bold;
+}
+
+.app-form input[type="text"],
+.app-form input[type="number"],
+.app-form input[type="email"],
+.app-form select,
+.app-form textarea {
+    width: 100%;
+    padding: 16px 20px;
+    background: #f8fafc;
+    border: 2px solid var(--input-border);
+    border-radius: 12px;
+    font-size: 16px;
+    color: black;
+    /* opacity: .5; */
+    transition: all 0.3s ease;
+}
+
+.app-form input:focus,
+.app-form select:focus,
+.app-form textarea:focus {
+    outline: none;
+    border-color: var(--accent-primary);
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+    background: #007f8d;
+    transform: translateY(-1px);
+}
+
+.app-form textarea {
+    resize: vertical;
+    min-height: 120px;
+    font-family: inherit;
+    line-height: 1.5;
+}
+
+.app-form select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%234f46e5' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+    background-size: 16px;
+    padding-right: 50px;
+}
+
+/* Checkbox Styles */
+.app-form .check-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 20px;
+    background: #f1f5f9;
+    border-radius: 12px;
+    margin: 10px 0;
+}
+
+.app-form .check-box input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    accent-color: var(--accent-primary);
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.app-form .check-box label {
+    color: var(--text-secondary);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* Submit Button */
+.app-form #submit-button {
+    background: var(--btn-gradient);
+    color: white;
+    border: none;
+    padding: 18px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    align-self: center;
+    min-width: 200px;
+    letter-spacing: 0.5px;
+}
+
+.app-form #submit-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(79, 70, 229, 0.25);
+}
+
+.app-form #submit-button:active {
+    transform: translateY(-1px);
+}
+
+/* Footer Styles */
+footer {
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    color: white;
+    padding: 30px 0;
+    margin-top: auto;
+}
+
+.copyright-message {
+    text-align: center;
+    padding: 20px;
+}
+
+.copyright-message p {
+    font-size: 15px;
+    color: #cbd5e1;
+    opacity: 0.9;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    header {
+        padding: 15px 30px;
+    }
+    
+    #application-form {
+        padding: 30px 20px;
+    }
+    
+    #application-form .app-form {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 15px 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    nav a {
+        margin: 0 8px;
+        font-size: 14px;
+    }
+    
+    .get-started {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    
+    #application-form h3 {
+        font-size: 24px;
+        padding: 0 15px;
+    }
+    
+    #application-form .app-form {
+        padding: 25px;
+    }
+    
+    .app-form input[type="text"],
+    .app-form input[type="number"],
+    .app-form input[type="email"],
+    .app-form select,
+    .app-form textarea {
+        padding: 14px 16px;
+        font-size: 15px;
+    }
+    
+    .app-form #submit-button {
+        width: 100%;
+        max-width: 300px;
+        padding: 16px 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 20px;
+    }
+    
+    .logo .icon {
+        font-size: 28px;
+    }
+    
+    #application-form h3 {
+        font-size: 22px;
+    }
+    
+    #application-form .app-form {
+        padding: 20px;
+    }
+    
+    .app-form label {
+        font-size: 15px;
+    }
+    
+    .app-form .check-box {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    footer {
+        padding: 20px 0;
+    }
+}
+
+/* Animation for form */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#application-form {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.app-form .form-group {
+    animation: fadeInUp 0.6s ease-out;
+    animation-fill-mode: both;
+}
+
+.app-form .form-group:nth-child(1) { animation-delay: 0.1s; }
+.app-form .form-group:nth-child(2) { animation-delay: 0.2s; }
+.app-form .form-group:nth-child(3) { animation-delay: 0.3s; }
+.app-form .form-group:nth-child(4) { animation-delay: 0.4s; }
+.app-form .form-group:nth-child(5) { animation-delay: 0.5s; }
+.app-form .form-group:nth-child(6) { animation-delay: 0.6s; }
+.app-form .form-group:nth-child(7) { animation-delay: 0.7s; }
+.app-form .form-group:nth-child(8) { animation-delay: 0.8s; }
+.app-form .check-box { animation-delay: 0.9s; }
+.app-form #submit-button { animation-delay: 1s; }

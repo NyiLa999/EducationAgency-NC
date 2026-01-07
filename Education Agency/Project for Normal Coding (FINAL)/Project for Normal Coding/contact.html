@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contact </title>
+    <link href="contact.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="root.css">
+    <link rel="icon" href="./images/logo2.png" type="image/png">
+</head>
+<body>
+    <header>
+  <div class="logo">
+    <span class="icon">🎓</span>
+    <span>Education Agency</span>
+  </div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="courses.html">Courses</a>
+    <a href="scholarships.html">Scholarships</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="auth.html" class="get-started">Get Started</a>
+  </nav>
+</header>
+
+
+     <main>
+    <section id="application-form">
+        <h3>Ready to Transform Your Future? Apply Now!</h3>
+        <p class="form-subtitle">Fill out the form below and our team will contact you within 24 hours</p>
+        
+        <form action="#" method="POST" class="app-form">
+            <div class="form-group">
+                <label for="stu-name">Student Name</label>
+                <input type="text" name="stu-name" id="stu-name" placeholder="Enter your full name" required/>
+            </div>
+            
+            <div class="form-group">
+                <label for="stu-age">Student Age</label>
+                <input type="number" name="stu-age" id="stu-age" min="16" max="60" placeholder="Enter your age" required/>
+            </div>
+            
+            <div class="form-group">
+                <label for="stu-email">Email Address</label>
+                <input type="email" name="stu-email" id="stu-email" placeholder="your.email@example.com" required/>
+            </div>
+            
+            <div class="form-group">
+                <label for="ph-no">Contact Number</label>
+                <input type="tel" name="ph-no" id="ph-no" placeholder="+1 (123) 456-7890" required />
+            </div>
+            
+            <div class="form-group">
+                <label for="program">Program Interest</label>
+                <input type="text" name="program" id="program" placeholder="e.g., Computer Science Scholarship" required />
+            </div>
+            
+            <div class="form-group">
+                <label for="edu-level">Current Education Level</label>
+                <select name="edu-level" id="edu-level" required>
+                    <option value="" disabled selected>Select your education level</option>
+                    <option value="high-school">High School</option>
+                    <option value="undergraduate">Undergraduate</option>
+                    <option value="postgraduate">Postgraduate</option>
+                    <option value="phd">PhD / Doctorate</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="brief-statement">Personal Statement</label>
+                <textarea rows="6" name="brief-statement" id="brief-statement" placeholder="Tell us about your academic goals, achievements, and why you're applying for this opportunity..." required></textarea>
+            </div>
+            
+            <div class="check-box">
+                <input type="checkbox" name="confirm" value="yes" id="check" required/>
+                <label for="check">I confirm that all information provided is accurate and complete.</label>
+            </div>
+            
+            <input type="submit" value="Submit Application" id="submit-button"/>
+        </form>
+        
+        <p class="form-footer">By submitting this form, you agree to our <a href="#">Privacy Policy</a> and consent to be contacted by our educational advisors.</p>
+    </section>
+</main>
+
+      <footer>
+         <div class="copyright-message"> 
+            <p> © 2026 Education Agency. All rights reserved.</p>
+         </div>
+      </footer> 
+     
+
+</body>
+</html>

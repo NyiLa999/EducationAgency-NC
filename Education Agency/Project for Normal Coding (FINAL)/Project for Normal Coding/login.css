@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #020617;
+  color: #e5e7eb;
+  min-height: 100vh;
+}
+
+/* ===== Header / Navbar (like index.html) ===== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background-color: #020617;
+  border-bottom: 1px solid #1e293b;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.logo .icon {
+  font-size: 26px;
+}
+
+.logo span {
+  color: #60a5fa; /* match accent color on index.html */
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #e5e7eb;
+  font-weight: 500;
+  font-size: 15px;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: #60a5fa;
+}
+
+
+
+/* ===== Login Section ===== */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 120px 8%;
+}
+
+.login-box {
+  width: 100%;
+  max-width: 420px;
+  background: #020617;
+  border: 1px solid #00E5FF;
+  border-radius: 16px;
+  padding: 40px;
+}
+
+.login-box h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #00E5FF;
+  text-shadow: 0px 0px 20px #00E5FF;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 14px;
+  color: #cbd5f5;
+  margin-bottom: 30px;
+}
+
+form label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 6px;
+  margin-top: 16px;
+  color: #00E5FF;
+}
+
+form input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #1e293b;
+  background: #020617;
+  color: #e5e7eb;
+}
+
+form input:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 14px;
+  font-size: 13px;
+}
+
+.remember {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.forgot {
+  color: #60a5fa;
+  text-decoration: none;
+}
+
+.forgot:hover {
+  text-decoration: underline;
+}
+
+form button {
+  width: 100%;
+  margin-top: 30px;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: linear-gradient(90deg,#22d3ee,#a855f7);
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 35px rgba(34, 211, 238, 0.35);
+}
+
+.switch {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.switch a {
+  color: #60a5fa;
+  text-decoration: none;
+}
+
+.switch a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Footer (like index.html) ===== */
+footer {
+  background: #0f172a; /* match index.html footer bg */
+  color: #cbd5f5;
+  padding: 70px 20px 40px;
+  border-top: 1px solid #1e293b;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.footer-company {
+  max-width: 260px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 22px;
+  margin-bottom: 14px;
+  color: #e5e7eb;
+}
+
+.footer-logo span {
+  color: #60a5fa;
+}
+
+.footer-tagline {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #cbd5f5;
+}
+
+.footer-links h4 {
+  margin-bottom: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #e5e7eb;
+}
+
+.footer-links a {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #cbd5f5;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: #60a5fa;
+}
+
+.footer-contact p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #cbd5f5;
+  margin-bottom: 10px;
+}
+
+.footer-copy {
+  text-align: center;
+  font-size: 13px;
+  color: #94a3b8;
+  border-top: 1px solid #1e293b;
+  padding-top: 20px;
+}
+@media (max-width: 768px) {
+    header {
+        padding: 15px 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    nav a {
+        margin: 0 8px;
+        font-size: 14px;
+    }
+    
+    .get-started {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+  }
